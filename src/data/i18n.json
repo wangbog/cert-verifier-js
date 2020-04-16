@@ -490,5 +490,87 @@
       "invalidMerkleVersion": "Merkle version used for signature is incompatible with Blockcerts version.",
       "isTransactionIdValid": "照合するための取引IDがないため、この証明書を認証できません。"
     }
+  },
+  "zh-CN": {
+    "steps": {
+      "formatValidationLabel": "格式检验",
+      "formatValidationLabelPending": "正在检验格式",
+      "hashComparisonLabel": "哈希校验",
+      "hashComparisonLabelPending": "正在校验哈希",
+      "statusCheckLabel": "状态检查",
+      "statusCheckLabelPending": "正在检查记录状态"
+    },
+    "subSteps": {
+      "getTransactionIdLabel": "获取交易ID",
+      "getTransactionIdLabelPending": "正在获取交易ID",
+      "computeLocalHashLabel": "计算本地哈希",
+      "computeLocalHashLabelPending": "正在计算本地哈希",
+      "fetchRemoteHashLabel": "获取远程哈希",
+      "fetchRemoteHashLabelPending": "正在获取远程哈希",
+      "getIssuerProfileLabel": "获取发布者资料",
+      "getIssuerProfileLabelPending": "正在获取发布者资料",
+      "parseIssuerKeysLabel": "解析发布者公钥",
+      "parseIssuerKeysLabelPending": "正在解析发布者公钥",
+      "compareHashesLabel": "对比哈希",
+      "compareHashesLabelPending": "正在对比哈希",
+      "checkMerkleRootLabel": "检验Merkle Root",
+      "checkMerkleRootLabelPending": "正在检验Merkle Root",
+      "checkReceiptLabel": "检验被授予者",
+      "checkReceiptLabelPending": "正在检验被授予者",
+      "checkIssuerSignatureLabel": "检验发布者签名",
+      "checkIssuerSignatureLabelPending": "正在检验发布者签名",
+      "checkAuthenticityLabel": "检验真实性",
+      "checkAuthenticityLabelPending": "正在检验真实性",
+      "checkRevokedStatusLabel": "检验撤销状态",
+      "checkRevokedStatusLabelPending": "正在检验撤销状态",
+      "checkExpiresDateLabel": "检验过期时间",
+      "checkExpiresDateLabelPending": "正在检验过期时间"
+    },
+    "revocation": {
+      "preReason": "理由：",
+      "reason": "该证书已被发布者撤回。"
+    },
+    "success": {
+      "mocknet": {
+        "label": "This Mocknet credential passed all checks",
+        "description": "Mocknet credentials are used for test purposes only. They are not recorded on a blockchain, and they should not be considered verified Blockcerts."
+      },
+      "blockchain": {
+        "label": "已验证",
+        "description": "这是一个有效的 ${chain} 证书",
+        "linkText": "查看交易链接"
+      }
+    },
+    "errors": {
+      "certificateNotValid": "这不是一个有效的证书",
+      "getChain": "无法识别的区块链",
+      "getTransactionId": "缺少交易ID导致无法验证此证书。",
+      "getIssuerProfile": "无法获取发布者资料",
+      "getRevokedAssertions": "无法获取撤销断言",
+      "lookForTxInvalidChain": "无效的区块链；无法映射到已知的 BlockchainExplorers 类型。",
+      "lookForTxInvalidAppConfig": "无效的应用配置；请检查 CONFIG.MinimumBlockchainExplorers 配置",
+      "lookForTxCouldNotConfirm": "无法确认交易。当前的区块链API均无响应。这可能是因为网络或API提供方限速导致的。",
+      "lookForTxDifferentAddresses": "与区块链API返回的发布者地址不一致",
+      "lookForTxDifferentRemoteHashes": "与区块链API返回的远程哈希不一致",
+      "parseIssuerKeys": "无法解析发布者id的JSON信息。",
+      "unableToGetRemoteHash": "无法获取远程哈希",
+      "parseBitpayResponse": "交易的确认次数小于最低要求（基于 Bitpay API）",
+      "parseBlockCypherResponse": "交易的确认次数小于最低要求（基于 Blockcypher API）",
+      "parseBlockexplorerResponse": "交易的确认次数小于最低要求（基于 Blockexplorer API）",
+      "parseBlockstreamResponse": "交易的确认次数小于最低要求（基于 Blockstream API）",
+      "checkEtherScanConfirmations": "交易的确认次数小于最低要求（基于 EtherScan API）",
+      "couldNotConfirmTx": "无法确认交易",
+      "failedJsonLdNormalization": "JSON-LD 标准化时失败",
+      "foundUnmappedFields": "JSON-LD 标准化时发现未映射的字段",
+      "ensureHashesEqual": "重新计算的哈希与远程哈希不匹配",
+      "ensureIssuerSignature": "发布者公钥与导出地址不一致。",
+      "ensureMerkleRootEqual": "Merkle Root 与远程哈希不匹配。",
+      "ensureNotExpired": "该证书已过期。",
+      "getCaseInsensitiveKey": "交易发生时间早于发布者地址生效时间。",
+      "ensureValidReceipt": "被授予人格式不正确。在浏览收据中的Merkle树时遇到错误。",
+      "invalidMerkleReceipt": "无效的 Merkle 收据。校验哈希与 Merkle Root不一致",
+      "invalidMerkleVersion": "用于签名的 Merkle 版本与 Blockcerts 使用的版本不兼容。",
+      "isTransactionIdValid": "缺少交易ID导致无法验证此证书。"
+    }
   }
 }

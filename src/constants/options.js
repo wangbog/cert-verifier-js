@@ -1,5 +1,5 @@
 const DEFAULT_OPTIONS = {
-  locale: 'en-US'
+  locale: 'zh-CN'
 };
 
 export { DEFAULT_OPTIONS };

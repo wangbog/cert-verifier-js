@@ -15,7 +15,7 @@ const checkRevokedStatus = 'checkRevokedStatus';
 const checkExpiresDate = 'checkExpiresDate';
 
 function getTextFor (subStep, status) {
-  return i18n['en-US'].subSteps[`${subStep}${status}`];
+  return i18n['zh-CN'].subSteps[`${subStep}${status}`];
 }
 
 const LABEL = 'Label';

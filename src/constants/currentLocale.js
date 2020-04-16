@@ -1,3 +1,3 @@
 export default {
-  locale: 'en-US'
+  locale: 'zh-CN'
 };
