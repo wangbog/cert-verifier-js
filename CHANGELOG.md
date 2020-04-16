@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Changed
 - Moved NPM package to scoped package **BREAKING CHANGE**
   
-  You should now install `@blockcerts/cert-verifier-js` package, which will be the only one maintained from now on.
+  You should now install `@wangbog/cert-verifier-js` package, which will be the only one maintained from now on.
   
 
 ## [2.0.1](https://github.com/blockchain-certificates/cert-verifier-js/releases/tag/v2.0.1) - 2018-09-06

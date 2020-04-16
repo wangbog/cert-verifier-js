@@ -1,4 +1,4 @@
-# @blockcerts/cert-verifier-js
+# @wangbog/cert-verifier-js
 
 [![Build Status](https://travis-ci.com/blockchain-certificates/cert-verifier-js.svg?branch=master)](https://travis-ci.com/blockchain-certificates/cert-verifier-js)
 [![codecov](https://codecov.io/gh/blockchain-certificates/cert-verifier-js/branch/master/graph/badge.svg)](https://codecov.io/gh/blockchain-certificates/cert-verifier-js)
@@ -11,7 +11,7 @@ A library to parse and verify [Blockcerts](https://www.blockcerts.org/) certific
 ## Install
 
 ```shell
-$ npm i @blockcerts/cert-verifier-js
+$ npm i @wangbog/cert-verifier-js
 ```
 
 ## Import
@@ -20,26 +20,26 @@ $ npm i @blockcerts/cert-verifier-js
 Exposed by default:
 
 ```javascript
-const { Certificate } = require('@blockcerts/cert-verifier-js');
+const { Certificate } = require('@wangbog/cert-verifier-js');
 var certificate = new Certificate(certificateDefinition);
 ```
 
 ### Running in Nodejs
 ```javascript
-const { Certificate } = require('@blockcerts/cert-verifier-js/lib');
+const { Certificate } = require('@wangbog/cert-verifier-js/lib');
 var certificate = new Certificate(certificateDefinition);
 ```
 
 #### ES module
 ```javascript
-import { Certificate } from '@blockcerts/cert-verifier-js';
+import { Certificate } from '@wangbog/cert-verifier-js';
 let certificate = new Certificate(certificateDefinition);
 ```
 
 #### Script tag (iife)
 [Check an example here](https://github.com/blockchain-certificates/cert-verifier-js/blob/master/test/e2e/script-tag.html)
 ```html
-<script src='node_modules/@blockcerts/cert-verifier-js/dist/verifier-iife.js'></script>
+<script src='node_modules/@wangbog/cert-verifier-js/dist/verifier-iife.js'></script>
 <script>
   var certificate = new Verifier.Certificate(certificateDefinition);
 </script>
@@ -188,7 +188,7 @@ Shape of the returned object can be checked here: https://github.com/blockchain-
 ### Constants
 Several constants are being exposed:
 ```javascript
-import { BLOCKCHAINS, STEPS, SUB_STEPS, CERTIFICATE_VERSIONS, VERIFICATION_STATUSES } from '@blockcerts/cert-verifier-js';
+import { BLOCKCHAINS, STEPS, SUB_STEPS, CERTIFICATE_VERSIONS, VERIFICATION_STATUSES } from '@wangbog/cert-verifier-js';
 ```
 - [`BLOCKCHAINS`](https://github.com/blockchain-certificates/cert-verifier-js/blob/master/src/constants/blockchains.js): descriptive object of all blockchains supported by the library
 - [`STEPS`](https://github.com/blockchain-certificates/cert-verifier-js/blob/master/src/constants/verificationSteps.js): descriptive object of all verification steps (top level)
@@ -199,7 +199,7 @@ import { BLOCKCHAINS, STEPS, SUB_STEPS, CERTIFICATE_VERSIONS, VERIFICATION_STATU
 ### i18n
 The exposed function `getSupportedLanguages()` returns an array of language codes supported by the library.
 ```javascript
-import { getSupportedLanguages } from '@blockcerts/cert-verifier-js';
+import { getSupportedLanguages } from '@wangbog/cert-verifier-js';
 getSupportedLanguages(); // ['en-US', 'es-ES', 'mt', ...]
 ```
 You can use the codes for the `locale` option.
