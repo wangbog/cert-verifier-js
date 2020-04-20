@@ -1,10 +1,12 @@
 # @wangbog/cert-verifier-js
 
-[![Build Status](https://travis-ci.com/blockchain-certificates/cert-verifier-js.svg?branch=master)](https://travis-ci.com/blockchain-certificates/cert-verifier-js)
-[![codecov](https://codecov.io/gh/blockchain-certificates/cert-verifier-js/branch/master/graph/badge.svg)](https://codecov.io/gh/blockchain-certificates/cert-verifier-js)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+基于@blockcerts/cert-verifier-js (A library to parse and verify [Blockcerts](https://www.blockcerts.org/) certificates)， @wangbog修改的实现。
 
-A library to parse and verify [Blockcerts](https://www.blockcerts.org/) certificates.
+本实现相较于官方版本，做了中文的支持。修改后的版本同样部署在了npm中（@wangbog/cert-verifier-js），可以使用npm直接安装并使用。
+
+值得注意的是，官方的@blockcerts/blockcerts-verifier项目引用的是3.6.2版本的@blockcerts/cert-verifier-js，为了便于在官方的@blockcerts/blockcerts-verifier基础上再做修改，因此本代码是在@blockcerts/cert-verifier-js 3.6.2版本的基础上做的修改，并且本github项目的默认分支也改为了3.6.2。
+
+以下文档全部fork自@blockcerts/cert-verifier-js官方github项目，除了nmp包的scope由@blockcerts调整为@wangbog外，未做其余调整。
 
 # Usage
 
